@@ -3,7 +3,40 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MAvha.Web", "MAvha.Web\MAvha.Web.vbproj", "{CD69785C-C524-435A-AA36-5DF42648D71F}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MAvha.BusinessLogic", "MAvha.BusinessLogic\MAvha.BusinessLogic.vbproj", "{9CF4C83E-C424-4BF7-92BB-D636D86E9D9D}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MAvha.Win", "MAvha.Win\MAvha.Win.vbproj", "{02CF9BE8-88D3-488E-ACB2-579A906C2612}"
+	ProjectSection(ProjectDependencies) = postProject
+		{97374943-0571-4D06-9BDE-66BAC7904B56} = {97374943-0571-4D06-9BDE-66BAC7904B56}
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MAvha.WS", "MAvha.WS\", "{97374943-0571-4D06-9BDE-66BAC7904B56}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		ProjectReferences = "{9cf4c83e-c424-4bf7-92bb-d636d86e9d9d}|MAvha.BusinessLogic.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51072"
+		Debug.AspNetCompiler.PhysicalPath = "MAvha.WS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51072\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51072"
+		Release.AspNetCompiler.PhysicalPath = "MAvha.WS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51072\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51072"
+		SlnRelativePath = "MAvha.WS\"
+		DefaultWebSiteLanguage = "Visual Basic"
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MAvha.Web", "MAvha.Web\MAvha.Web.vbproj", "{2A875351-A21D-42D1-A267-DBDB14325B8C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{97374943-0571-4D06-9BDE-66BAC7904B56} = {97374943-0571-4D06-9BDE-66BAC7904B56}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +44,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CD69785C-C524-435A-AA36-5DF42648D71F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CD69785C-C524-435A-AA36-5DF42648D71F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CD69785C-C524-435A-AA36-5DF42648D71F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CD69785C-C524-435A-AA36-5DF42648D71F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CF4C83E-C424-4BF7-92BB-D636D86E9D9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CF4C83E-C424-4BF7-92BB-D636D86E9D9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CF4C83E-C424-4BF7-92BB-D636D86E9D9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CF4C83E-C424-4BF7-92BB-D636D86E9D9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02CF9BE8-88D3-488E-ACB2-579A906C2612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02CF9BE8-88D3-488E-ACB2-579A906C2612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02CF9BE8-88D3-488E-ACB2-579A906C2612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02CF9BE8-88D3-488E-ACB2-579A906C2612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97374943-0571-4D06-9BDE-66BAC7904B56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97374943-0571-4D06-9BDE-66BAC7904B56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97374943-0571-4D06-9BDE-66BAC7904B56}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{97374943-0571-4D06-9BDE-66BAC7904B56}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{2A875351-A21D-42D1-A267-DBDB14325B8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A875351-A21D-42D1-A267-DBDB14325B8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A875351-A21D-42D1-A267-DBDB14325B8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A875351-A21D-42D1-A267-DBDB14325B8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
