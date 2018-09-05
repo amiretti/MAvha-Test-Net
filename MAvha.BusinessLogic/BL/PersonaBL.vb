@@ -21,8 +21,10 @@ Public Class PersonaBL
             Create(newPersona)
         Else
             Dim updPersona As New Persona With {
+                .ID = x.ID,
                 .Nombre = x.Nombre,
                 .Nacimiento = x.Nacimiento.Date,
+                .Activo = True,
                 .Femenino = isFemale
             }
             Update(updPersona)

@@ -20,7 +20,7 @@ Partial Public Class Persona
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtName As Global.System.Web.UI.HtmlControls.HtmlInputText
+    Protected WithEvents txtName As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''txtNacimiento control.
@@ -39,6 +39,15 @@ Partial Public Class Persona
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtEdad As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''txtID control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtID As Global.System.Web.UI.WebControls.HiddenField
     
     '''<summary>
     '''rbFemale control.
